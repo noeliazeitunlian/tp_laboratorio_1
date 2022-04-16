@@ -3,9 +3,6 @@
  Name        : tp_laboratorio_1.c
  Author      : Noelia Zeitunlian
 
- justificar texto, ver
- ver isdigit
-
  ============================================================================
  */
 
@@ -95,34 +92,31 @@ int main(void) {
 			scanf("%f",&kilometrosIngresados);
 
 			if(kilometrosIngresados < 0 || kilometrosIngresados == 0){
-				printf("Error, ingrese kilometros mayores a 0");
+				printf("\nError, ingrese kilometros mayores a 0\n");
 			}
 			break;
 
 		case 2:
 			printf("2.Ingresar precio de vuelos: (Aerolineas=%2.f, Latam=%2.f)\n\r",precioAerolineas,precioLatam);
-			printf("Ingrese precio vuelo Aerolineas: ",precioAerolineas);
+			printf("\nIngrese precio vuelo Aerolineas:\n");
 			scanf("%f",&precioAerolineas);
 			if(precioAerolineas < 0 || precioAerolineas == 0)
 			{
-				printf("Error, ingrese un precio mayor a 0");
+				printf("\nError, ingrese un precio mayor a 0\n");
 			}
 			else {
-				printf("Ingrese precio vuelo Latam: ",precioLatam);
+				printf("\nIngrese precio vuelo Latam:\n");
 				scanf("%f",&precioLatam);
 				if(precioLatam < 0 || precioLatam == 0){
-							printf("Error, ingrese un precio mayor a 0");
+							printf("\nError, ingrese un precio mayor a 0\n");
 				}
-
 			}
-
-
 			break;
 
 		case 3:
 			if(precioAerolineas == 0 && precioLatam == 0)
 						{
-								printf("Error, debe ingresar el precio de los vuelos");
+								printf("\nError, debe ingresar el precio de los vuelos\n");
 						}
 						else{
 
@@ -145,7 +139,7 @@ int main(void) {
 
 		case 4:
 
-			printf("KMs ingresados: %.2f \n\r",kilometrosIngresados);
+			printf("\nKMs ingresados: %.2f \n\r",kilometrosIngresados);
 
 			printf("Precio Latam: $ %.2f \n",precioLatam);
 			printf("a) Precio con tarjeta de debito: $ %.2f \n",costoTarjetaDebitoLatam);
@@ -161,7 +155,7 @@ int main(void) {
 			printf("d) Mostrar precio unitario: $ %.2f \n\r",costoPrecioUnitarioAerolineas);
 
 
-			printf("La diferencia de precio es: $ %.2f \r",diferenciaPrecio);
+			printf("\nLa diferencia de precio es: $ %.2f \n\r",diferenciaPrecio);
 
 			break;
 
@@ -193,9 +187,9 @@ int main(void) {
 				printf("a) Precio con tarjeta de debito: $ %.2f \n",costoTarjetaDebitoAerolineasForzada);
 				printf("b) Precio con tarjeta de credito: $ %.2f \n",costoTarjetaCreditoAerolineasForzada);
 				printf("c) Precio pagando con bitcoin: %lf BTC \n",costoBitcoinAerolineasForzada);
-				printf("d) Mostrar precio unitario: $ %.2f \n\r",costoPrecioUnitarioAerolineasForzada);
+				printf("d) Mostrar precio unitario: $ %.2f \n",costoPrecioUnitarioAerolineasForzada);
 
-				printf("La diferencia de precio es: $ %.2f",diferenciaPrecioForzada);
+				printf("\n La diferencia de precio es: $ %.2f\n\r",diferenciaPrecioForzada);
 
 		}
 	}

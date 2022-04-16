@@ -1,7 +1,7 @@
 /*
  * BibliotecaCalculos.h
  *
- 	 	 PROTOTIPOS.
+
  */
 
 #ifndef BIBLIOTECAALCULOS_H_
